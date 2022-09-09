@@ -6,15 +6,23 @@ body{
 /* TYPOGRAPHY */
 
 h1{
-    font-size: 4rem;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    text-shadow: 0.5px 0.5px  rgba(0, 0, 0, 0.721)
 }
 
 h2{
-    font-size: 3.5rem;
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 1.35rem;
 }
 
 p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.8rem;
 }
 
@@ -44,7 +52,6 @@ button:hover{
     display: flex;
     width: 85%;
     justify-content: space-between;
-
 }
 
 
@@ -73,14 +80,84 @@ nav>a:hover{
 }
 
 /* MAIN */
-main{
-    padding: 20px;
-}
+
 
 /*hero*/
 
+.hero{
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+    padding: 5% 15%;
+    color: white;
+    background: #2e2e2e;
+}
+
+.hero p{
+    padding: 20px 0 10px 0 ;
+}
+
+.hero button{
+    margin: 0;
+}
+
+/* goals */
+
+.goals{
+    margin: 5% 15%;
+    text-align: center;
+}
+
+.goal-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card-box{
+    margin: 2%;
+    width: 35%;
+    background-color: #beb4fe;
+}
+
+/* banner */
+
+.banner-cta{
+    padding: 5% 15%;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.about-us{
+    margin: 5% 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    width: 50%;
+    margin: 20px;
+}
 
 
 /* FOOTER */
+
+footer{
+    background-color: #eeeeee;
+}
+
+
+footer>div{
+    display: flex;
+    margin: 5% 15%;
+    display: flex;
+    justify-content: center;
+}
+
+footer>p{
+    font-size: 15px;
+    text-align: center;
+}
+
 
 /* RESPONSIVE */
