@@ -19,9 +19,11 @@ h2{
     margin-bottom: 1.25rem;
 }
 
-h3{
+h3, caption{
     font-size: 1.65rem;
     margin-bottom: 0.75rem;
+    font-style: normal;
+    
 }
 
 h4{
@@ -127,7 +129,6 @@ nav div{
 }
 
 
-
 /* goals */
 
 .goals{
@@ -171,6 +172,7 @@ nav div{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .box{
@@ -202,8 +204,6 @@ footer{
     padding: 0 3%;
     margin: 5px;
     box-sizing: border-box;
-    
-
 }
 
 form>input:first-child{
@@ -228,6 +228,124 @@ form>input:last-child{
     font-weight: 400;
     font-size: 1.1rem;
 }
+
+/* ---------------------------
+CHI SIAMO
+------------------------------ */
+/* sezione1 */
+.about-section{
+    padding: 8%;
+    color: black;
+    text-align: center;
+}
+
+.about-section h1{
+    color: black;
+    margin-bottom: 30px;
+}
+
+.about-info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.infobox{
+    width: 50%;
+    padding: 20px;
+}
+
+
+.about-info img{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+ 
+/* tabella */
+
+.tabella{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+    padding: 30px;
+}
+
+table {
+    margin-bottom: 2em;
+}
+
+table:last-child{
+    display: none;
+}
+
+thead tr {
+    background-color: #5f82a3;
+    color: #ffffff;
+    line-height: 1.5rem;
+}
+th, td {
+    padding: 30px 30px;
+    vertical-align: bottom;
+    text-align: center;
+}
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: #d2dce7;
+}
+
+/* ---------------------------
+CHI SIAMO
+------------------------------ */
+
+.infobox form input{
+    padding:12px;
+    margin: 10px;
+    width: 100%;
+    background: white;
+    border: solid 1px grey;
+    border-radius: 3px;
+    color: rgb(118, 118, 118);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+.infobox form :last-child{
+    padding:12px;
+    width: 50%;
+    background: linear-gradient(90deg, #6cc1e2 0%, #392f7a 100%);
+    border: none;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    border-radius: 0;
+}
+
+.infobox div{
+    margin-bottom: 50px;
+}
+
+.infobox a{
+    text-decoration: none;
+    color: black;
+}
+
+.infobox a:hover{
+    text-decoration: underline;
+}
+
+
+
+
 
 /* ---------------------------
 RESPONSIVE
@@ -390,6 +508,124 @@ RESPONSIVE
             text-align: left;
             padding: 0 5%;
             margin: 5px;
+        }
+
+    }
+
+    /* ---------------------------
+    CHI SIAMO
+    ------------------------------ */
+    /* sezione1 */
+    @media screen and (max-width: 950px) {
+
+        .about-section{
+            padding: 12% 5% 8% 5%;
+        }
+
+        .about-section h1{
+            color: black;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .about-info{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .infobox{
+            padding: 10px;
+        }
+
+
+        .about-info img{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .about-section{
+            padding: 20% 5% 8% 5%;
+            
+        }
+
+        .about-section h1{
+            margin-bottom: 30px;
+        }
+
+        .about-info{
+            margin-top: 20px;
+            flex-direction: column;
+        }
+
+        .infobox{
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .about-info img{
+            padding: 0px;
+        }
+    }
+
+    /* tabella */
+
+    @media screen and (max-width: 500px) {
+
+        .tabella{
+            display: flex;
+            justify-content: center;
+            margin-top: -5%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        table {
+            margin-bottom: 2em;
+            display: none;
+        }
+
+        table:last-child{
+            display: block;
+        }
+
+        thead tr {
+            background-color: #5f82a3;
+            color: #ffffff;
+            line-height: 1.5rem;
+        }
+
+        td{
+            padding: 10px 50px;
+            vertical-align: middle;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        tr td:first-of-type {
+            padding: 10px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr{
+            background-color: #d2dce7;
+        }
+
+        .white{
+            background-color:white;
+        }
+
+        strong{
+            font-weight: bold;
         }
 
     }
