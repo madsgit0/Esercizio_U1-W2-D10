@@ -7,12 +7,14 @@
     <link rel="icon" type="image/x-icon" href="https://join.epicode.com/wp-content/uploads/2022/04/Epic-favicon-23.png" />
     <title>Epicode - Profilo aziendale</title>
 
-    <link rel="stylesheet" href="./assets/css/reset.css"/>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/671abf387b.js" crossorigin="anonymous"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -21,7 +23,7 @@
   <body>
     <!-- header -->
     <header>
-      <div class="content"> 
+      <div class="content">
         <div class="logo">
           <img src="./assets/images/logo.png" alt="logo-epicode" />
         </div>
@@ -33,46 +35,48 @@
           <button>
             <a href="./contatti.html"> Registrati </a>
           </button>
+          <div><i class="fas fa-ellipsis-h"></i></div>
         </nav>
-    </div>
+      </div>
     </header>
 
     <!-- main -->
     <main>
       <!-- hero -->
-      <section class="hero" style="background-image: url(./assets/images/banner.jpg);">
+      <section class="hero" style="background-image: url(./assets/images/banner.jpg)">
         <h1>Diventa un developer EPICO</h1>
         <p>Diventa un developer EPICO e ti troviamo noi il lavoro. Scommettiamo su di te: paghi metà corso, l'altra metà solo quando inizi a lavorare.</p>
         <button><a href="./contatti.html"> Chiedi info </a></button>
       </section>
 
       <!-- goals -->
-      <section class="goals" >
+      <section class="goals">
         <h2>Perché diventare un Developer?</h2>
-        <p>Non servono laurea e competenze specifiche, solo impegno.
-          <br> Segui il corso online, dove vuoi tu.
-         <br> Il lavoro che andrai a fare è veramente figo.</p>
+        <p>
+          Non servono laurea e competenze specifiche, solo impegno. <br />
+          Segui il corso online, dove vuoi tu. <br />
+          Il lavoro che andrai a fare è veramente figo.
+        </p>
+
         <!-- goals-cards -->
         <div class="goal-cards">
           <div class="card-box">
-            <ion-icon name="square"></ion-icon>
+            <i class="fas fa-comment-dots"></i>
             <h3>Tutti ti cercheranno</h3>
             <p>Sono 30.000 in Italia le posizioni di developer scoperte, scegli quella che ti stimola di piu.</p>
           </div>
-          
+
           <div class="card-box">
-            <ion-icon name="square"></ion-icon>
+            <i class="fas fa-map-marker-alt"></i>
             <h3>Potrai lavorare dove vuoi</h3>
             <p>Non serve lavorare in ufficio per essere creatori di prodotti digitali, e le aziende lo sanno. Lavora da casa, in riva al mare o in montagna.</p>
           </div>
 
           <div class="card-box">
-            <ion-icon name="square"></ion-icon>
+            <i class="fas fa-user-circle"></i>
             <h3>Azienda, Freelance o Startup</h3>
             <p>Scegli più facilmente la carriera e il rapporto di lavoro che ti piace di più, in qualsiasi momento.</p>
           </div>
-
-
         </div>
       </section>
 
@@ -83,16 +87,26 @@
         <button><a href="./contatti.html"> Scrivici </a></button>
       </section>
 
-      <!-- about-us     -->
+      <!-- about-us-->
       <section class="about-us">
         <div class="box">
           <img src="./assets/images/notebook.jpg" alt="notebook" />
         </div>
 
         <div class="box">
-          <div class="card-box">
-            <h3><ion-icon name="square"> </ion-icon> Chi sarai</h3>
+          <div class="label">
+            <h3><i class="fas fa-grin"></i> Chi sarai</h3>
             <p>Il creatore delle app che usi tutti giorni</p>
+          </div>
+
+          <div class="label">
+            <h3><i class="fas fa-grin"></i> Chi diventerai</h3>
+            <p>Lo specialista padrone del suo tempo spazio</p>
+          </div>
+
+          <div class="label">
+            <h3><i class="fas fa-grin"></i> Chi non sarai</h3>
+            <p>Il nerd incollato allo schermo</p>
           </div>
         </div>
       </section>
@@ -100,35 +114,31 @@
 
     <!-- footer -->
     <footer>
-      <div>
-        <div>
+      <div class="footer-content">
+        <div class="block">
           <h4>Chi siamo</h4>
           <p>Epicode School nasce con l'obiettivo di rivoluzionare la formazione in ambito tech.</p>
         </div>
 
-        <div>
-          <h4>Ti piace ciò che vedi?
-            Condividilo con i tuoi amici!</h4>
-            <div>
-              <ion-icon name="square"></ion-icon>
-              <ion-icon name="square"></ion-icon>
-              <ion-icon name="square"></ion-icon>
-            </div>
+        <div class="block">
+          <h4>Ti piace ciò che vedi? Condividilo con i tuoi amici!</h4>
+          <div>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+          </div>
         </div>
 
-        <div>
-          <h4>Iscriviti alla nostra newsletter/h4>
+        <div class="block">
+          <h4>Iscriviti alla nostra newsletter</h4>
           <form>
-            <input type="email" id="fname" placeholder="Inserisci qui la tua mail"><br>
-            <input type="submit" value="Va bene!">
+            <input type="email" placeholder="Inserisci qui la tua mail" />
+            <input type="submit" value="Va bene!" />
           </form>
         </div>
-
       </div>
 
       <p>© 2021 Epicode Web Developer school - Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</p>
-
-      
     </footer>
   </body>
 </html>
